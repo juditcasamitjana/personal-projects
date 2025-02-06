@@ -1,0 +1,25 @@
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+header img.logo {
+    width: 140px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.separador {
+    border-right: 1px solid white; /* Solo derecho o izquierdo para que sea de fino 1px. */
+}
