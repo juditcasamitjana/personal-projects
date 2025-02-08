@@ -1,5 +1,13 @@
 /* Media mobile */
 
+
+h1, h2 {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 section.equipo {
     background-color: white;
     padding: 30px;
@@ -8,19 +16,21 @@ section.equipo {
 h1.equipo {
     color: #14d9c4;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 p.equipo {
     color: #54585a;
-    display: flex;
     text-align: center;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 section.fort-deb {
-    background-color: #b8b8b9;
+    background-color: rgba(184, 184, 185, 0.2);
     padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -28,8 +38,9 @@ section.fort-deb {
 
 h2.fort-deb {
     color: #099d8d;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
     margin: 30px 0 10px;
 }
 
