@@ -79,7 +79,7 @@ section.team {
     padding: 30px;
 }
 
-h2.team {
+h2 {
     color: #14d9c4;
     margin-bottom: 20px;
     text-align: center;
@@ -197,9 +197,48 @@ div.adalab-image {
         width: 50%;
     }
 
+    section.who-we-are {
+        background-color: aquamarine;
+    }
+
+    div.left-person {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        
+    }
+
+    img.photo-person {
+        width: 250px;
+        border: #b8b8b9;
+        border-radius: 20px;
+    }
+    
     footer {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        padding: 25px 30px 55px;
+    }
+
+    p.footer {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    ul.footer {
+    align-items: flex-end;
+    gap: 8px;
+    color: #54585a;
+    }
+
+    div.adalab-image {
+        position: absolute;
+        bottom: 0;
+    }
+
+    img.image-footer {
+        background-color: #54585a;
     }
 }
 
