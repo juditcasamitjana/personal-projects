@@ -13,7 +13,7 @@ section.team {
     padding: 30px;
 }
 
-h2.team {
+section.team h2 {
     color: #14d9c4;
     margin-bottom: 20px;
     text-align: center;
@@ -21,7 +21,7 @@ h2.team {
     font-weight: 500;
 }
 
-p.team {
+section.team p, section.fort-deb p {
     color: #54585a;
     text-align: center;
     font-family: "Open Sans", serif;
@@ -36,7 +36,7 @@ section.fort-deb {
     flex-direction: column;
 }
 
-h3.fort-deb {
+section.fort-deb h3 {
     color: #099d8d;
     text-align: center;
     font-size: 22px;
@@ -63,7 +63,7 @@ div.center {
 
 /* Media tablet */
 
-@media (min-width: 320px){
+@media (min-width: 768px){
     section.fort-deb {
         display: flex;
         flex-direction: row;
@@ -77,12 +77,7 @@ div.center {
 
 /* Media desktop */
 
-@media (min-width: 768px){
-    /* section.fort-deb {
-        display: flex;
-        flex-direction: row;
-    } */
-}
+
 
 
 
