@@ -163,7 +163,7 @@ footer {
     border-top: solid 1px #b8b8b9;
 }
 
-p.footer {
+footer p {
     color: #b8b8b9;
     font-weight: 400;
     font-style: normal;
@@ -171,16 +171,14 @@ p.footer {
     padding: 20px;
 }
 
-div.menu-footer {
-    padding: 5px;
-}
 
-ul.footer{
+footer ul {
     display: flex;
     flex-direction: column;
     gap: 3px;
     color: rgba(84, 88, 90, 0.75);
     text-align: center;
+    padding: 5px;
 }
 
 div.adalab-image {
@@ -196,7 +194,7 @@ div.adalab-image {
 
 /* @media Tablet */
 
-@media (min-width: 320px){
+@media (min-width: 768px){
     nav.header {
         background-color: #099d8d;        
         display: flex;
@@ -241,8 +239,6 @@ div.adalab-image {
     
     img.photo-person {
         width: 250px;
-        border: #b8b8b9;
-        border-radius: 20px;
     }
         
     footer {
@@ -252,12 +248,12 @@ div.adalab-image {
         padding: 25px 30px 55px;
     }
 
-    p.footer {
+    footer p {
         padding: 10px;
         align-items: flex-start;
     }
 
-    ul.footer {
+    footer ul {
         align-items: flex-end;
         gap: 8px;
         color: #54585a;
@@ -271,7 +267,7 @@ div.adalab-image {
 
 /* @media Desktop */
 
-@media (min-width: 768px){
+@media (min-width: 1200px){
     /* section.fort-deb {
         display: flex;
         flex-direction: row;
