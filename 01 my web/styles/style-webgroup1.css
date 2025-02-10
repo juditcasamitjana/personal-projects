@@ -154,8 +154,20 @@ div.person {
 
 div.social-media {
     display: flex;
-    gap: 10px;
     padding: 20px 20px 50px;
+}
+
+div.social-media .icon {
+    color: #099d8d;
+}
+
+div.social-media .icon:not(.icon:first-child)::before {
+    font-family: "Open Sans", serif;
+    content: "·";
+    color: black;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0px 7px;
 }
 
 footer {
@@ -164,6 +176,7 @@ footer {
 }
 
 footer p {
+    font-family: "Open Sans", serif;
     color: #b8b8b9;
     font-weight: 400;
     font-style: normal;
