@@ -19,15 +19,20 @@ h1.team {
     font-weight: 400;
 }
 
+nav.header {
+    position: absolute;
+    width: 100%;
+}
+
 div.name-container {
-    background-color: rgba(9, 157, 141, 0.95);
+    background-color: rgba(9, 157, 141, 0.80);
     color: white;
     text-align: center;    
     padding: 20px;
 }
 
 div.menu-container {
-    background-color: rgba(20, 217, 196, 0.95);
+    background-color: rgba(20, 217, 196, 0.80);
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -52,7 +57,7 @@ div.claim {
     flex-direction: column;
     justify-content: end;
     align-items: center;    
-    height: 300px;
+    height: 400px;
 }
 
 p.claim {
@@ -64,7 +69,7 @@ p.claim {
     width: 85%;
     padding: 15px;
     position: relative;
-    top: 38px;
+    transform: translateY(50%);
 }
 
 section.team {
@@ -121,16 +126,28 @@ div.center {
     justify-content: center;
 }
 
-div.box-person {
+div.box-person-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     }
 
+div.box-person-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
 img.photo-person {
     width: 180px;
     border: solid 5px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+}
+
+div.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h4.person {
@@ -144,17 +161,13 @@ p.person {
     padding: 5px 25px;
     font-family: "Open Sans", serif;
     font-size: 16px;
-    font-weight: normal;
-    color: #54585a;
-}
-
-div.person {
     text-align: center;
+    color: #54585a;
 }
 
 div.social-media {
     display: flex;
-    padding: 20px 20px 50px;
+    padding: 20px 25px 50px;
 }
 
 div.social-media .icon {
@@ -209,14 +222,18 @@ div.adalab-image {
 
 @media (min-width: 768px){
     nav.header {
-        background-color: #099d8d;        
+        background-color: rgba(9, 157, 141, 0.80);    
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    div.name-container {
+        background-color: transparent;
+    }
+    
     div.menu-container {
-        background-color: #099d8d;        
+        background-color: transparent;     
     }
 
     div.claim {
@@ -227,7 +244,8 @@ div.adalab-image {
         background-color: rgba(255, 255, 255, 0.80);
         top: 0;   
         width: 60%;  
-        margin-left: 30px;   
+        margin-left: 30px;
+        transform: translateY(0%);   
     }
     
     section.fort-deb {        
@@ -242,27 +260,43 @@ div.adalab-image {
     section.who-we-are {
         background-color: aquamarine;
     }
-    
-    div.left-person {
+
+    div.box-person-left {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         padding: 40px;
-        
+        justify-content: center;
     }
-    
+
+    div.box-person-right {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 40px;
+        justify-content: center;
+    }
+
     img.photo-person {
         width: 250px;
+    }   
+    
+    div.person {
+        display: flex;
+        align-items: self-start;
     }
-        
+
+    p.person {
+        text-align: left;
+    }
+
     footer {
         display: flex;
         justify-content: space-between;
         position: relative;
-        padding: 25px 30px 55px;
+        padding: 25px 30px 55px 60px;
     }
 
     footer p {
-        padding: 10px;
+        padding: 0px;
         align-items: flex-start;
     }
 
@@ -274,7 +308,7 @@ div.adalab-image {
 
     div.adalab-image {
         position: absolute;
-        bottom: 0;
+        bottom: 36px;
     }
 }
 
