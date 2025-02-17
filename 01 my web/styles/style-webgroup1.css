@@ -61,10 +61,11 @@ p.claim {
     font-family: "Open Sans", serif;
     font-size: 18px;
     font-weight: 600;
-    width: 85%;
+    /* width: 85%; */
     padding: 15px;
     position: relative;
-    top: 38px;
+    transform: translateY(50%);
+    /* top: 38px; */
 }
 
 section.team {
@@ -184,8 +185,8 @@ footer p {
     padding: 20px;
 }
 
-
 footer ul {
+    font-family: "Rubik", serif;
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -200,7 +201,7 @@ div.adalab-image {
     padding: 10px;
 }
 
-.image-footer {
+div.adalab-image img {
     width: 145px;
     padding: 10px;
 }
